@@ -9,24 +9,21 @@
 	<form method="GET" action="">
 		<fieldset>
 			<legend>Personal information</legend>
-			<fieldset>
 				<label for="name">Enter your name:</label>
 				<input type="text" name="name" id="name" placeholder="Enter first name" required pattern="[A-Za-z]{5,}" title="Use letter five or more">
-			</fieldset>
-			<fieldset>
+			    <br>
 				<label for="password">Enter password</label>
 				<input type="password" name="passsword" id="password" placeholder="Enter password" required pattern=".{6,}" title="Enter your password">
-			</fieldset>
-			<fieldset>
+			    <br>
 				<p>SEX:</p>
 				<label for="sex_man">Man</label>
 				<input type="radio" name="sex" value="Man" id="sex_man" required><br>
 				<label for="sex_woman">Woman</label>
 				<input type="radio" name="sex" value="Woman" id="sex_woman" required><br>
-			</fieldset>
-			<label for="rem_me">Remember me</label>
-			<input type="checkbox" name="rem_me" id="rem_me"><br>
-			<input type="submit" name="sumit" value="SEND">
+			    <br>
+			    <label for="rem_me">Remember me</label>
+			    <input type="checkbox" name="rem_me" id="rem_me"><br>
+			    <input type="submit" name="sumit" value="SEND">
 		</fieldset>
 	</form>
 </body>
