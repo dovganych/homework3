@@ -31,3 +31,7 @@ nav{text-align: right;}
 {
 	clear:both;
 }
+a:hover
+{
+	background-color:grey;
+}
