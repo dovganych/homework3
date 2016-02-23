@@ -25,7 +25,7 @@
     <![endif]-->
   </head>
   <body>
-  	<div class="navbar navbar-inverse navbar-fixed-top" id="fff">
+    <div class="navbar navbar-inverse navbar-fixed-top" id="home">
 		<div class="container">
 				<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
@@ -39,8 +39,8 @@
 					<div class="collapse navbar-collapse" id="responsive-menu">
 						<ul class="nav navbar-nav">
 							<li><a href="#">Projects</a></li>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Profile</a></li>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#profile">Profile</a></li>
 							<li><a href="#">Contact</a></li>
 						</ul>
 					</div>
@@ -52,28 +52,36 @@
 			<li class="active" data-target="#carousel" data-slide-to="0"></li>
 			<li data-target="#carousel" data-slide-to="1"></li>
 			<li data-target="#carousel" data-slide-to="2"></li>
+			<li data-target="#carousel" data-slide-to="3"></li>
 		</ol>
 		
 		<div class="carousel-inner">
 			<div class="item active">
 				<img src="slide_0.jpg" alt="">
 				<div class="carousel-caption">
-					<a href="#"class="btn btn-success">CV</a>
-					<p>discribe slide</p>
+					<a href="#homework"class="btn btn-success">HOMEWORK</a>
+					<h3>Hi, I'm Misha Dovhanych</h3>
 				</div>
 			</div>
 			<div class="item">
 				<img src="slide_1.jpg" alt="">
 				<div class="carousel-caption">
-					<h3>Second Slide</h3>
-					<p>discribe slide</p>
+					<a href="#profile"class="btn btn-success">PROFILE</a>
+					<p>My Skills</p>
 				</div>
 			</div>
 			<div class="item">
 				<img src="slide_2.jpg" alt="">
 				<div class="carousel-caption">
-					<h3>Third Slide</h3>
-					<p>discribe slide</p>
+					<a href="#"class="btn btn-success">PROJECTS</a>
+					<p>Check my projects</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="slide_3.jpg" alt="">
+				<div class="carousel-caption">
+					<a href="#"class="btn btn-success">CONTACT</a>
+					<p>My contact's information</p>
 				</div>
 			</div>
 		</div>
@@ -85,27 +93,42 @@
 			<span class="glyphicon glyphicon-chevron-right">right</span>
 		</a>
 	</div>
+	
+	<div class="container-fluid" id="profile">
+		<div class="row">
+				<h2>Education</h2>
+				<p>09.2010 – 2014 National University "Lviv Polytechnic", Institute of Computer Technologies, Automation and Metrology, specialty "Computer engineering", in June 2014 received a bachelor's degree.</p>
+				<p>09.2014 – 2015 National University "Lviv Polytechnic", Institute of Computer Technologies, Automation and Metrology, specialty "Specialized computer systems", in June 2015 received a Master's degree.</p>	
+			
+				<h2>Skills</h2>
+				<h4>HTML5</h4>
+				<p>Enough</p>
+				<h4>CSS3</h4>
+				<p>Enough</p>
+				<h4>JavaScript</h4>
+				<p>Enough</p>
+		</div>
+	</div>
 
-
-	<div class="container">
+	<div class="container-fluid" id="homework">
 		<div class="row">
 			<h1>ax<sup>2</sup>+bx+c</h1>
 		</div>
 		<div class="input-group">
   			<span class="input-group-addon" id="basic-addon1">A</span>
   			<input type="text" class="form-control" placeholder="Enter a:" aria-describedby="basic-addon1" id="a">
-		</div>	
+		</div>	<br>
 		<div class="input-group">
   			<span class="input-group-addon" id="basic-addon2">B</span>
   			<input type="text" class="form-control" placeholder="Enter b:" aria-describedby="basic-addon2" id="b">
-		</div>	
+		</div>	<br>
 		<div class="input-group">
   			<span class="input-group-addon" id="basic-addon3">C</span>
   			<input type="text" class="form-control" placeholder="Enter c:" aria-describedby="basic-addon3" id="c">
-		</div>	
+		</div>	<br>
 		<button type="button" class="btn btn-success btn-lg btn-block" id="button1" onclick="calc()"><i class="fa fa-cog fa-spin fa-4x"></i></button>
 		<div class="row">
-			<h2 id="par0">Discriminant:</h2>
+			<h2 id="par0">discriminant:</h2>
 			<h2 id="par">x1:</h2>
 			<h2 id="par1">x2:</h2>
 		</div>

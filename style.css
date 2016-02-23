@@ -1,4 +1,14 @@
-#fff
+#home
 {
 	margin:0;
+}
+#profile
+{
+	background-color:#00b300;
+	height:700px;
+}
+#homework
+{
+	
+	background-color:grey;
 }
