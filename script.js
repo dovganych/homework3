@@ -17,17 +17,17 @@ $(document).ready(function (){
                     scrollTop: $("#home").offset().top
                 }, 1500);
     });
-    $("#s-profile").click(function (){
+    $("#s-profile, #c-s-profile").click(function (){
         $('html, body').animate({
                     scrollTop: $("#profile").offset().top
                 }, 1500);
     });
-    $("#s-books").click(function (){
+    $("#s-books, #c-s-books").click(function (){
         $('html, body').animate({
                     scrollTop: $("#books").offset().top
                 }, 1500);
     });
-    $("#s-contact").click(function (){
+    $("#s-contact, #c-s-contact").click(function (){
         $('html, body').animate({
                     scrollTop: $("#contact").offset().top
                 }, 1500);
