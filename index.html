@@ -8,7 +8,8 @@
     <title>Homework</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="animate.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet">
 
@@ -23,7 +24,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
   </head>
+  
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <!----------------------------Header------------------------>
@@ -35,67 +38,66 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
 						</button>
 					<a class="navbar-brand" href="#"><i class="fa fa-fort-awesome"></i></a>
 					</div>
 					<div class="collapse navbar-collapse" id="responsive-menu">
 						<ul class="nav navbar-nav">							
-							<li><a href="#home">Home</a></li>
-							<li><a href="#profile">Profile</a></li>
-							<li><a href="#contact">Contact</a></li>
+							<li><a id="s-home" href="#home">Home</a></li>
+							<li><a id="s-profile"href="#profile">Profile</a></li>
+							<li><a id="s-books"href="#books">Books</a></li>
+							<li><a id="s-contact"href="#contact">Contact</a></li>
 						</ul>
 					</div>
 		</div>
 	</div>
 <!----------------------------Home------------------------>
-	<div id="home" class="carousel slide" data-ride="carousel">
-		
-				<ol class="carousel-indicators">
-					<li class="active" data-target="#home" data-slide-to="0"></li>
-					<li data-target="#home" data-slide-to="1"></li>
-					<li data-target="#home" data-slide-to="2"></li>
-					<li data-target="#home" data-slide-to="3"></li>
-				</ol>
-		
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<img src="slide_0.jpg" alt="" class="first-slide" width="100%" height="auto">
-							<div class="my-caption">
-								<h1>Hi, I'm Misha Dovhanych</h1>
-							</div>
-						</div>
-						<div class="item">
-							<img src="slide_1.jpg" alt="" width="100%">
-							<div class="my-caption">
-								<a href="#profile"class="btn btn-success">Skils</a>
-								<p>Check my skill</p>
-							</div>
-						</div>
-						<div class="item">
-							<img src="slide_2.jpg" alt="" width="100%">
-							<div class="my-caption">
-								<a href="#"class="btn btn-success">PROJECTS</a>
-								<p>Check my projects</p>
-							</div>
-						</div>
-						<div class="item">
-							<img src="slide_3.jpg" alt="" width="100%">
-							<div class="my-caption">
-								<a href="#contact"class="btn btn-success">CONTACT</a>
-								<p>My contact's information</p>
-							</div>
-						</div>
+<div id="home" class="container-fluid">
+	<div  id="carousel" class="carousel slide" data-ride="carousel" data-interval="3000" >
+		<ol class="carousel-indicators">
+			<li class="active" data-target="#carousel" data-slide-to="0"></li>
+			<li data-target="#carousel" data-slide-to="1"></li>
+			<li data-target="#carousel" data-slide-to="2"></li>
+			<li data-target="#carousel" data-slide-to="3"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox" >
+			<div class="item active">
+				<img src="slide_0.jpg" alt="" class="first-slide" width="100%">
+					<div class="my-caption">
+						<h1>Hi, I'm Misha Dovhanych</h1>
 					</div>
+			</div>
+			<div class="item">
+				<img src="slide_1.jpg" alt="" width="100%">
+				<div class="my-caption">
+					<a href="#profile"class="btn btn-success my-button">PROFILE</a>		
+				</div>
+			</div>
+			<div class="item">
+				<img src="slide_2.jpg" alt="" width="100%">
+				<div class="my-caption">
+					<a href="#books"class="btn btn-success my-button">BOOKS</a>
+				</div>
+			</div>
+			<div class="item">
+				<img src="slide_3.jpg" alt="" width="100%">
+				<div class="my-caption">
+					<a href="#contact"class="btn btn-success my-button">CONTACT</a>
+				</div>
+			</div>
+		</div>
 		
-					<a href="#home" class="left carousel-control" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left"></span>
-					</a>
-					<a href="#home" class="right carousel-control" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right"></span>
-					</a>
+		<a href="#carousel" class="left carousel-control" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#carousel" class="right carousel-control" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
 	</div>
+</div>
 <!----------------------------Profile------------------------>
-	<div class="container-fluid" id="profile">
+	<div class="container-fluid wow bounceInLeft" data-wow-duration="2s" id="profile">
 		<div class="row" id="education">
 			<div class="col-xs-4 col-md-4 col-sm-4">
 				<div>
@@ -136,9 +138,128 @@
 			</div> 
  	</div>
 	
-
+<!----------------------------Books------------------------>
+	<div class="container-fluid wow bounceInRight" id="books">
+		<div class="row">
+			<h1 class="text-center"><i class="fa fa-book fa-2x"></i>Books</h1>
+			<div class="col-md-4 col-sm-4 col-lg-4">
+				<div class="books">
+						<div>
+							<a href="http://www.livelib.ru/" title="LiveLib — социальная сеть читателей книг">
+								<img src="http://s.livelib.ru/img/logopad600x45.png" alt="LiveLib — социальная сеть читателей книг"  width="100%" height="45">
+							</a>
+						</div>
+						<div style="padding: 14px 21px 21px;">
+							<h1 class="books-t">Книга «Чотири сезони»</h1>
+							<a href="http://www.livelib.ru/book/1001427740">
+							<a href="http://www.livelib.ru/book/1001427740" title="Чотири сезони"><img src="http://i.livelib.ru/boocover/1001427740/m/aa02/Chotiri_sezoni.png" alt="Чотири сезони" style="background-color: #ffffff;padding: 0 14px 14px 0 !important; float: left !important;"/></a></a>Подарунок шанувальникам!<br />
+							Чотири уславлені твори: «Рита Гейворт і втеча з Шоушенку», «Здібний учень», «Тіло», «Метод дихання»
+							<div style="margin-top: 14px"> <a href="http://www.livelib.ru/book/1001427740" style="color: #1752B6 !important;">http://www.livelib.ru/book/1001427740</a>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-lg-4">
+				<div class="books">
+						<div>
+							<a href="http://www.livelib.ru/" title="LiveLib — социальная сеть читателей книг">
+								<img src="http://s.livelib.ru/img/logopad600x45.png" alt="LiveLib — социальная сеть читателей книг"  width="100%" height="45" style="border: 0">
+							</a>
+						</div>
+							<div style="padding: 14px 21px 21px;">
+							<h1 class="books-t">Книга «Приют»</h1>
+							<a href="http://www.livelib.ru/book/1000938797">
+								<a href="http://www.livelib.ru/book/1000938797" title="«Приют»">
+									<img src="http://i.livelib.ru/boocover/1000938797/m/9218/Priyut.png" alt="«Приют»" style="background-color: #ffffff;padding: 0 14px 14px 0 !important; float: left !important;"/>
+								</a>
+							</a>Старое здание... Потрескавшиеся стены... Загадочные фотографии... Ночные кошмары...<br />
+							Тот, кто попадал в этот дом, оставался в нем навсегда. Но Дэниэл этого не знал. Он приехал сюда на летние курсы для одаренных подростков и гораздо позже узнал, что когда-то это здание было лечебницей для странных людей.<br />
+							Что происходило здесь? Почему некоторые коридоры и подвал замурованы? Кто-то тайком следит за ним.
+							Книга иллюстрирована уникальными рисунками и фото.
+							<div style="margin-top: 14px"> <a href="http://www.livelib.ru/book/1000938797" style="color: #1752B6 !important;">http://www.livelib.ru/book/1000938797</a>
+							</div>
+						</div>
+				</div>				
+			</div>
+			<div class="col-md-4 col-sm-4 col-lg-4">
+				<div class="books">
+					<div>
+						<a href="http://www.livelib.ru/" title="LiveLib — социальная сеть читателей книг">
+							<img src="http://s.livelib.ru/img/logopad600x45.png" alt="LiveLib — социальная сеть читателей книг"  width="100%" height="45" style="border: 0">
+						</a>
+					</div>
+						<div style="padding: 14px 21px 21px;">
+						<h1 class="books-t">Книга «Кладовище Домашніх Тварин»</h1>
+						<a href="http://www.livelib.ru/book/1001335089">
+							<a href="http://www.livelib.ru/book/1001335089" title="«Кладовище Домашніх Тварин»">
+								<img src="http://i.livelib.ru/boocover/1001335089/m/3b1e/Kladovische_Domashn%D1%96h_Tvarin.png" alt="«Кладовище Домашніх Тварин»" style="background-color: #ffffff;padding: 0 14px 14px 0 !important; float: left !important;"/>
+							</a>
+						</a>Після цієї книжки ви не зможете спати спокійно...<br />
+						Улюбленого кота сім`ї Луїса збила вантажівка. Приятель пропонує поховати його на старому індіанському цвинтарі. А вранці кіт повертається додому. Виявляється, домашніх улюбленців можна повернути з того світу. Що станеться, коли хтось спробує поховати там людину...
+						<div style="margin-top: 14px"> 
+							<a href="http://www.livelib.ru/book/1001335089" style="color: #1752B6 !important;">http://www.livelib.ru/book/1001335089</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+				<div class="col-md-4 col-sm-4 col-lg-4">
+					<div class="books">
+						<div>
+							<a href="http://www.livelib.ru/" title="LiveLib — социальная сеть читателей книг">
+								<img src="http://s.livelib.ru/img/logopad600x45.png" alt="LiveLib — социальная сеть читателей книг"  width="100%" height="45" style="border: 0">
+							</a>
+						</div>
+							<div style="padding: 14px 21px 21px;">
+							<h1 class="books-t">Книга «Ночная прогулка»</h1>
+							<a href="http://www.livelib.ru/book/1000216892">
+								<a href="http://www.livelib.ru/book/1000216892" title="«Ночная прогулка»">
+									<img src="http://i.livelib.ru/boocover/1000216892/m/013e/Nochnaya_progulka.png" alt="«Ночная прогулка»" style="background-color: #ffffff;padding: 0 14px 14px 0 !important; float: left !important;"/>
+								</a>
+							</a>Боба Шоу приятно читать, поверьте. И не только любителям фантастики. Его книги - это настоящая литература: умная, добрая и... интересная. Четыре романа этого сборника - это четыре необычных мира, в которых происходят удивительные события. Прочтите, не пожалеете...
+							<div style="margin-top: 14px"> <a href="http://www.livelib.ru/book/1000216892" style="color: #1752B6 !important;">http://www.livelib.ru/book/1000216892</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-lg-4">
+					<div class="books">
+						<div>
+							<a href="http://www.livelib.ru/" title="LiveLib — социальная сеть читателей книг">
+								<img src="http://s.livelib.ru/img/logopad600x45.png" alt="LiveLib — социальная сеть читателей книг"  width="100%" height="45" style="border: 0">
+							</a>
+						</div>
+							<div style="padding: 14px 21px 21px;">
+							<h1 class="books-t">Книга «Процесс»</h1>
+							<a href="http://www.livelib.ru/book/1001289096">
+								<a href="http://www.livelib.ru/book/1001289096" title="«Процесс»">
+									<img src="http://i.livelib.ru/boocover/1001289096/m/3133/Protsess_.png" alt="«Процесс»" style="background-color: #ffffff;padding: 0 14px 14px 0 !important; float: left !important;"/>
+								</a>
+							</a>Предлагаем нашему читателю знаменитый роман Ф. Кафки в наиболее полной редакции. Именно в таком виде последние двадцать лет выходит этот роман в немецких изданиях. В качестве послесловия в книгу включена статья А. Белобратова «Процесс „Процесса“: Франц Кафка и его роман-фрагмент».
+							<div style="margin-top: 14px"> <a href="http://www.livelib.ru/book/1001289096" style="color: #1752B6 !important;">http://www.livelib.ru/book/1001289096</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-lg-4">
+					<div class="books">
+						<div>
+							<a href="http://www.livelib.ru/" title="LiveLib — социальная сеть читателей книг">
+								<img src="http://s.livelib.ru/img/logopad600x45.png" alt="LiveLib — социальная сеть читателей книг"  width="100%" height="45" style="border: 0">
+							</a>
+						</div>
+							<div style="padding: 14px 21px 21px;">
+							<h1 class="books-t">Книга «Хлеб с ветчиной»</h1><a href="http://www.livelib.ru/book/1000308143"><a href="http://www.livelib.ru/book/1000308143" title="Хлеб с ветчиной"><img src="http://i.livelib.ru/boocover/1000308143/m/a9d5/Hleb_s_vetchinoj.png" alt="Хлеб с ветчиной" style="background-color: #ffffff;padding: 0 14px 14px 0 !important; float: left !important;"/></a></a>"Хлеб с ветчиной" - самый проникновенный роман Чарльза Буковски. Подобно "Приключениям Гекльберри Финна" и "Ловцу во ржи", он написан с точки зрения впечатлительного ребенка, имеющего дело с двуличием, претенциозностью и тщеславием взрослого мира. Ребенка, постепенно открывающего для себя алкоголь и женщин, азартные игры и мордобой, Д. Г. Лоуренса и Эрнеста Хемингуэя, И. С. Тургенева и Ф. М. Достоевского.<div style="margin-top: 14px"> <a href="http://www.livelib.ru/book/1000308143" style="color: #1752B6 !important;">http://www.livelib.ru/book/1000308143</a>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+		<a class="text-center" href="http://www.livelib.ru/reader/DannetteAsking" target="_blank" ><h3>Check my profile on LiveLib</h3></a>
+	</div>		
 <!----------------------------Contact------------------------>
-	<div class="container-fluid" id="contact">
+	<div class="container-fluid wow bounceInUp" data-wow-duration="2s" id="contact">
 			<div id="main">
 		      <div class="header">
 		        <h1>Contact me</h1>
@@ -180,10 +301,9 @@
 		    </div>
 			<div class="col-md-5">
 	    		<ul class="nav navbar-nav">
-	    			<li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-	    			<li><a href="#"><i class="fa fa-skype fa-2x"></i></a></li>
-	    			<li><a href="#"><i class="fa fa-vk fa-2x"></i></a></li>
-	    			<li><a href="#"><i class="fa fa-github-square fa-2x"></i></a></li>
+	    			<li><a href="https://www.facebook.com/misha.dovhanych5" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+	    			<li><a href="https://vk.com/id69763329" target="_blank"><i class="fa fa-vk fa-2x"></i></a></li>
+	    			<li><a href="https://github.com/dovganych" target="_blank"><i class="fa fa-github-square fa-2x"></i></a></li>
 	    		</ul>
     		</div>
 	</div>
@@ -195,5 +315,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="script.js"></script>
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
   </body>
 </html>
