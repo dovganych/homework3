@@ -33,3 +33,13 @@ $(document).ready(function (){
                 }, 1500);
     });
 });
+$(document).ready(function (){
+    $("#submit").click(function (){
+        $.ajax({
+            url: "/http://formspree.io/misha.dovganych@gmail.com", 
+            method: "POST",
+            data: {message: "hello!"},
+            dataType: "json"
+        });
+    });
+});
